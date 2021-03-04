@@ -1,0 +1,15 @@
+name: Python Formatting
+on:
+  push:
+    branches: "**"
+jobs:
+  python-formatting:
+    runs-on: [ubuntu-20.04]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+      - run: pip install black
+      - run: black src
+      - run: git diff HEAD --exit-code

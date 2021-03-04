@@ -9,6 +9,9 @@ fi
 
 : Using name $1
 
+git init
+git add -A
+
 git ls-files | xargs sed -i "s/template_package/$1/"
 
 git remote add origin git@github.com:m2robocon/$1

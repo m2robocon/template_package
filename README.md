@@ -4,7 +4,7 @@ M2 template package.
 ## Usage
 Delete these usage lines after usage!
 ```
-wget https://github.com/m2robocon/template_package/master.tar.gz
+wget https://github.com/m2robocon/template_package/archive/master.tar.gz
 tar xzf master.tar.gz
 mv template_package-master $NAME
 cd $NAME
